@@ -1,0 +1,129 @@
+body {
+  background-color: rgba(255, 255, 0, 0.849);
+ 
+}
+.cal {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  grid-gap: 15px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  color: white;
+  padding: 40px;
+  margin-top: 200px;
+}
+.main {
+  background-color: #0a53b3;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+    rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  height: 450px;
+  width: 400px;
+
+  position: relative;
+  left: 500px;
+  border-radius: 10px;
+}
+.day {
+  color: #fffcdc;
+  font-weight: bold;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.item {
+  color: rgb(224, 192, 192);
+}
+
+.day:hover {
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  background-color: #292c6d;
+  border-radius: 2px;
+  border: 2px solid #ff9292;
+  cursor: pointer;
+}
+
+.item {
+  height: 30px;
+  width: 30px;
+
+  text-align: center;
+}
+.day {
+  height: 35px;
+  width: 35px;
+  text-align: center;
+}
+
+.item:hover {
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  background-color: #fe8f8f;
+  border-radius: 2px;
+  border: 2px solid #ff9292;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+}
+.date {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  width: 300px;
+  height: 50px;
+  background-color: #9145b6;
+  align-items: center;
+  position: relative;
+  left: 530px;
+  top: 190px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+    rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+.month,
+.year {
+  height: 30px;
+}
+select {
+  height: 30px;
+  background-color: #9145b6;
+  color: white;
+  font-weight: bold;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: none;
+  border-radius: 2px;
+}
+button {
+  height: 40px;
+  width: 120px;
+  margin: 30px;
+  position: relative;
+  left: 25px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border: none;
+  font-weight: bold;
+}
+#set {
+  background-color: #5c7aea;
+}
+#set:hover {
+  background-color: #6e3cbc;
+  color: white;
+}
+#cancel:hover {
+  background-color: violet;
+  cursor: pointer;
+  color: white;
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .main {
+    width: 100%;
+   
+    align-content: center;
+    justify-content: center;
+  
+  }
+}
