@@ -4,12 +4,171 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <title>Payment Form</title>
   <link rel="stylesheet" href="style_form.css">
 </head>
+<style>
+
+	*{
+			margin: 0;
+			padding: 0;
+	}
+	::placeholder{
+			color: chartreuse;
+			opacity: 1;
+	
+		}
+
+
+	body{
+         			 background-image: url('https://i0.wp.com/www.socialnews.xyz/wp-content/uploads/2020/10/26/5573c6f0bee7ca021f4a8aecbaf6cbeb.jpg?quality=80&zoom=1&ssl=1');
+        			-webkit-background-size: cover;
+         			-moz-background-size: cover;
+         			-o-background-size: cover;
+			background-size: cover;
+          			background-repeat: no-repeat;
+          			background-size:cover;
+          			background-position:center;
+			height:100%;
+			width:100%;
+			margin: 0;
+			min-height: 100vh;
+           
+ 		}
+
+	@media screen and (min-width: 1300px) {
+  	.Reset
+		{
+			border-radius: 25px;
+			border: none ;
+			box-sizing: content-box;
+			cursor: pointer ;
+			padding: 25px 25px;
+			color : -webkit-linear-gradient(#eee, #333);
+			background: indigo;
+			font:  "comic-sans" ;
+			opacity: 0.5;
+			box-shadow: 0 0 30px 6px rgba(0, 0, 0, 0.5);
+			width: 180px;
+			height: 50px;
+			transition: transform -0.5s;
+		}
+
+	.Reset:hover
+		{
+			opacity: 1;
+			transform:  scale(3);
+		}
+}
+	@media only screen and (max-width: 767px) {
+  	.Reset
+		{
+			border-radius: 25px;
+			border: none ;
+			box-sizing: content-box;
+			cursor: pointer ;
+			padding: 25px 25px;
+			color : -webkit-linear-gradient(#eee, #333);
+			background-color: indigo;
+			font:  "comic-sans" ;
+			opacity: 0.5;
+			box-shadow: 0 0 30px 6px rgba(0, 0, 0, 0.5);
+			width: 180px;
+			height: 50px;
+			
+		}
+
+	.Reset:active
+		{
+			cursor: pointer
+			background-color: yellow !important;
+			opacity:1 ;
+		}
+}
+	#my_form 
+ 		{
+			padding: 50px 0;
+			justify-content: center;
+			vertical-align: middle;
+		}
+
+	#my_form  input[type = "password"],#my_form input[type = "email"],#my_form input[type = "text"]
+		{
+			width:60%;
+			padding: 10px 24px 10px 10px;
+			box-sizing: content-box;
+			border-bottom: 1px solid #fff;
+		}
+	.password-container 
+		{
+			width: 600px;
+			position: relative;
+			margin: 15px auto;
+			padding-top: 1px;
+			padding-bottom: 1px;
+		}
+
+	.password-container input
+		{	
+			width: 90%;
+			border: 3px blue;
+			outline: none;
+			background: transparent;
+			color: blue;
+			font-size: 27px;
+			font-weight: 900;
+		}	
+	.emailId-container input
+		{	
+			width: 90%;
+			border: none;
+			outline: none;
+			background: transparent;
+			color: blue;
+			font-size: 24px;
+		}	
+	.username-container input
+		{	
+			width: 90%;
+			border: none;
+			outline: none;
+			background: transparent;
+			color: blue;
+			font-size: 24px;
+		}
+
+	.container
+		{
+			width: 600px;
+			margin: 15% auto ;
+			background: rgba(245,40,145,0.8);
+			box-shadow: 0 0 30px 6px rgba(25, 0, 0, 1);
+			padding: 3px 0;
+			color: black;
+			border-radius: 12px;
+		
+		
+		}
+
+	.material-symbols-outlined 
+		{
+  			font-variation-settings:
+  			'FILL' 1,
+  			'wght' 900,
+  			'GRAD' 0,
+  			'opsz' 48 ;
+   			position : absolute;
+   			right: 12%;
+   			top: 36%;
+   			cursor: pointer;
+   			color: yellow;
+		}
+
+</style>
 <body>
   <div class="container">
-    <form action="">
+    <form action="login" method="POST"  id="my_form">
       <!-- creating a form using "form" tag-->
       <hr />
       <h1 class="main_heading">Payment Form</h1>
@@ -31,7 +190,7 @@
       </fieldset>
       <p>
         * ADDDRESS :
-        <textarea name="Address" id="Address" cols="100" rows="8" required></textarea>
+        <textarea name="Address" id="Address" cols="79" rows="8" required></textarea>
         <!-- adding a blank text area for writing adress-->
       </p>
       <p>* Email: <input type="email" name="email" id="email" required /></p>
@@ -58,10 +217,30 @@
       </p>
       <p>
         *CVV:-
-        <input type="password" name="CVV" id="CVV" maxlength="3" required />
+        <div class = "password-container"><input type="password" id = "password" name="CVV" id="CVV" maxlength="3" required />
+<i id ="show-password"> <span class="material-symbols-outlined" id="icon">visibility</span></div>
       </p>
-      <input type="submit" value="SUBMIT DETAILS & PAY NOW" />
+      <input type="submit" value="SUBMIT DETAILS & PAY NOW" onclick='reset()' class="Reset"/>
     </form>
   </div>
 </body>
+<script>
+	const showPassword = document.querySelector("#show-password");
+	const Passwordfield = document.querySelector("#password");
+	const icon = document.getElementById("icon");
+	showPassword.addEventListener("click" ,  function(){
+			this.classList.toggle("fa-solidfa-eye-slash");	
+			const type = Passwordfield.getAttribute("type") === "password" ? "text" : "password";
+ 			Passwordfield.getAttribute("type") === "password" ? icon.innerText="visibility_off" : icon.innerText="visibility";
+            			password.setAttribute("type", type);
+		})
+
+	function reset()
+		{
+			document.getElementById =("userName").value = "  "  ;
+			document.getElementById =("emailId").value = "  " ;
+			document.getElementById =("password").value = "  "  ;
+		}
+
+</script>
 </html>
