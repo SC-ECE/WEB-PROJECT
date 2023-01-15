@@ -1,7 +1,7 @@
 
 ![synapse_cover](https://user-images.githubusercontent.com/82677314/209576740-fa1707e7-1242-4115-b1f0-86e0e965db9c.png)
 
-Gourab.png
+
 # Hi <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px"> .SYNAPSE 1.0 IS HERE :bangbang::bangbang::bangbang:
 
 :performing_arts: **What is Synapse ?**
