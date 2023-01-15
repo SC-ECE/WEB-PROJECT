@@ -1,3 +1,17 @@
+
+<h1>About Project </h1>
+This is a project that is created using React that visualise the sorting pattern of differnt sorting algorithm
+for ex megrge sort,bubble sort
+
+<h1>Screenshots </h1>
+
+![Screenshot (220)](https://user-images.githubusercontent.com/71378462/212553385-f8086703-7e07-4c76-8948-5799c2e5cebb.png)
+
+<h1>Ticket </h1>
+
+![photo_2023-01-02_12-28-25](https://user-images.githubusercontent.com/71378462/212553270-e9e2903b-5fe5-4099-ae2b-127427ef974f.jpg)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
