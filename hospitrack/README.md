@@ -1,3 +1,12 @@
+This app is created to perform as a integrated platform for all informations related to hospitals like Bed Availabilty , Doctor Check Up Timimgs , Ambulance Availibility  etc . 
+
+![image](https://user-images.githubusercontent.com/83345253/212533699-f12a01b9-6deb-4862-8ef8-fd25e4379742.png)
+This is the starting of the project 
+
+![Gourab](https://user-images.githubusercontent.com/83345253/212533707-6d7666e8-ba37-4987-a7d7-6f5fe41b5c63.png)
+My Synapse entry ticket 
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
