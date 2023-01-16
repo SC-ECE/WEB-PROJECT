@@ -1,19 +1,14 @@
-# Food Website
+# Debit Card
 
-## A simple Food Ordering Website only using HTML,CSS and JS only
+## A simple debit card Website only using HTML and CSS only
 
 ## Authors
 
-- [Soumyajit](https://github.com/Soumyajit2825)
+- [Avik](https://github.com/avik712)
 
 ## Synapse Ticket
-
-![Soumyajit](/FOOD_WEBSITE/Images/Soumyajit.png)
-
-## Project Screenshots
-
-![App Screenshot](/FOOD_WEBSITE/Images/screencapture-127-0-0-1-5500-FOOD-WEBSITE-index-html-2023-01-03-12_43_36.png)
+![Avik](https://user-images.githubusercontent.com/95546138/212712279-e5a4bac5-2733-49ed-92bf-22ae963baf4d.png)
 
 ## Website Link 
 
-- [Website Link](https://soumyajit2825.github.io/FOOD-WEBSITE/)
+- [Website Link](https://avik712.github.io/debit-card/)
