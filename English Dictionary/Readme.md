@@ -6,7 +6,7 @@ This is a Simple English Dictionary Website made using html ,css and Javascript.
 
 ### `Click The Link to Check My Webstite` 👉 : [Click Here](https://dhrupad17-english-dictionary.netlify.app/)
 
-##Features
+## Features
 
 - If the searched word exists then meaning is shown
 - If the searched word does not exist then it displays “Can’t find the meaning of ……”.
