@@ -12,6 +12,8 @@ My Synapse entry ticket
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 
+With Respect to this pull request , the following has been implemented :
+![image](https://user-images.githubusercontent.com/83345253/212680086-950c1ddf-d5aa-4ba0-af51-6444998e09af.png)
 
 ## Available Scripts
 
