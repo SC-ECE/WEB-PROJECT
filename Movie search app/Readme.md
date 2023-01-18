@@ -7,7 +7,7 @@ stack : html,css and jacascript and api
 #screenshot
 
 
-![Screenshot (223)](https://user-images.githubusercontent.com/71378462/213266482-baa5711e-2d02-4615-8a95-890702b192a2.png)
+
 
 
 # TICKET 
