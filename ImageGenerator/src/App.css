@@ -1,0 +1,17 @@
+.app-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center   ;
+}
+
+.app-input {
+  height: 28px;
+  width: 300px;
+  margin: 20px;
+}
+
+.result-image {
+  width: 300px;
+  margin-top: 20px;
+}
