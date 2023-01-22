@@ -1,9 +1,12 @@
-#<h1>Sorting-Visualizer</h1>
+# Sorting-Visualizer
 This is a visualizer for different sorting algorithms like Bubble Sort, Insertion Sort, Quick Sort, and Merge Sort using Html, CSS, and Javascript.
 At school we learned about different sorting algorithms, the problem though is that it was too theoretical and I wanted to build something that can help 
 visualize them in action. Hope this will help someone who is struggling with this concept.
 
-#ScreenShot 
+# Synapse Ticket 
+<img src="https://github.com/NembotJules/WEB-PROJECT/blob/main/DijkstraVisualizer/212491770-40a6ceb2-ba52-4b7a-9b1d-3a35d3ceb162.png">
+
+# ScreenShot 
 ![My Image](https://github.com/NembotJules/Sorting-Visualizer/blob/main/Capture%20d%E2%80%99%C3%A9cran%202022-12-21%20215108.png)
 
 
