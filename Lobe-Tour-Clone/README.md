@@ -4,6 +4,7 @@ A clone of the Tour page of Lobe.ai, using CSS Bootstrap5.
 ## Table of contents
 
 - [Overview](#overview)
+  - [Event Ticket](#event-ticket)
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
@@ -16,6 +17,9 @@ A clone of the Tour page of Lobe.ai, using CSS Bootstrap5.
 
 ## Overview
 
+### Event Ticket
+<img src= "final/ticket.png">
+
 ### Screenshot
 
 #### Wide display
@@ -26,7 +30,7 @@ A clone of the Tour page of Lobe.ai, using CSS Bootstrap5.
 
 ### Links
 
-- Live Site URL: https://embertseal.github.io/Lobe-Tour
+- Live Site URL: https://embertseal.github.io/Web-Dev-Synapse/Lobe-Tour-Clone
 
 ## My Process
 
@@ -51,6 +55,6 @@ A clone of the Tour page of Lobe.ai, using CSS Bootstrap5.
 
 
 ## Acknowledgements
-Original design belongs to <a href = "https://www.lobe.ai/tour">Lobe.ai Tour page</a> and this is a clone of the above page .
+Original design belongs to <a href = "https://www.lobe.ai/tour">Lobe.ai Tour page</a> and this is a clone of the above page.
 
 
