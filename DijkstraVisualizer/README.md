@@ -1,6 +1,9 @@
 # Graph-Algorithm-Visualizer
 A graph algorithm visualizer made in Js <br>
 You can play with it here : https://nembotjules.github.io/Graph-Algorithm-Visualizer/
+
+#Synapse Ticket
+<img src="https://github.com/NembotJules/WEB-PROJECT/blob/main/DijkstraVisualizer/212491770-40a6ceb2-ba52-4b7a-9b1d-3a35d3ceb162.png">
 # Algorithm Implemented
 
 -Dijkstra <br>
