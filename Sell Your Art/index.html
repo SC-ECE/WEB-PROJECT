@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bg.css" />
+    <script
+      src="https://kit.fontawesome.com/b0a3094c49.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"
+      defer
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spartan:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.3/tailwind.min.css"
+      integrity="sha512-wl80ucxCRpLkfaCnbM88y4AxnutbGk327762eM9E/rRTvY/ZGAHWMZrYUq66VQBYMIYDFpDdJAOGSLyIPHZ2IQ=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <title>Sell Your Art</title>
+  </head>
+  <body class="">
+    <header class="bg-green-100">
+        <nav class="flex justify-between items-center w-[92%]  mx-auto pt-2">
+            <div class="flex lg:space-x-4 space-x-2">
+                <img class="lg:w-10 pb-2 w-10   lg:visible cursor-pointer " src="creativity.png" alt="...">
+                <span class="font-semibold text-lg mt-2 mb-2">Sell Your Creativity</span>
+            </div>
+            <div
+                class="nav-links duration-500 md:static absolute  md:min-h-fit min-h-[35vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-1">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 bg-green-100">
+                    <li>
+                        <a class="hover:text-gray-500 font-semibold lg:text-lg " href="#Home">Home</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500 font-semibold lg:text-lg" href="#Categories">Categories</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500 font-semibold lg:text-lg" href="#Community">Community</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500 font-semibold lg:text-lg " href="/dist/artstore/art store.html">    <i class="fa-sharp fa-solid fa-store lg:mr-1"></i>Store</a>
+                    </li>
+                    <li><a target="_blank" href="join artwork.html">
+                       
+                        <button class="bg-green-600 p-1 font-semibold rounded-lg hover:bg-cyan-400 text-white" >SignUp</button>
+                      </a>
+                    </li>
+                </ul>
+            </div>
+          
+          <!-- <div class="flex items-center gap-6 mt-4">
+             <button class="bg-[#a6c1ee] text-white px-5 py-2 rounded-full hover:bg-[#87acec]">Sign in</button> -->
+             <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-4xl cursor-pointer  md:hidden"></ion-icon>
+         </div>
+              
+    </header> 
+
+    <!-- image slider  -->
+    <section id="Home">
+    <header class="bg-header flex items-center justify-center h-screen pb-12">
+      <div class="bg-white font-serif mx-4 p-4 text-center md:p-8">
+        <p class="italic text-base">Lets </p>
+        <h1 class="lg:text-5xl text-xl uppercase">Sell Your Creativity</h1>
+        <p class="text-lg"></p>
+      </div>
+    </header>
+  </section>
+    <section id="Categories">
+    <!-- Categorie section -->
+    <div
+      class="flex items-center my-4 before:flex-1 before:border-t before:border-gray-300 before:mt-0.5 after:flex-1 after:border-t after:border-gray-300 after:mt-0.5"
+    >
+      <p class="text-center lg:text-5xl text-black font-semibold mx-4 mb-0">
+        Categories
+      </p>
+    </div>
+    <!-- categories -->
+    <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-4">
+      <div class="flex items-center justify-center mb-4 m-5">
+        <div
+          class="rounded-lg justify-center text-center border-b-4 border-solid border-sky-500 lg:hover:shadow-xl hover:rounded-lg hover:shadow-xl"
+        >
+          <img
+            class="lg:w-56 w-32 ml-16 lg:rounded-sm lg:ml-44 md:w-28 md:mt-3 md:ml-20 md:rounded-md border-2"
+            src="drawing b.png"
+            height="200"
+            alt=""
+          />
+
+          <div class="p-1 mt-2">
+            <h5 class="text-gray-900 text-lg lg:text-xl font-semibold mb-2">
+              Art Collection
+            </h5>
+            <p class="text-gray-700 w- font-base mb-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Accusamus, distinctio?
+            </p>
+            <a href="/dist/artstore/art store.html">
+              <button
+                type="button"
+                class="lg:text-base lg:mb-5 mb-4 md:mt-4 md:mr-3 inline-block px-8 py-2.5 bg-cyan-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-400 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+              >
+                View
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- card -2 -->
+      <div class="flex items-center justify-center mb-4 m-5">
+        <div
+          class="rounded-lg justify-center text-center border-b-4 border-green-600 lg:hover:shadow-xl hover:rounded-lg hover:shadow-xl"
+        >
+          <img
+            class="lg:w-56 w-32 ml-16 lg:rounded-sm lg:ml-44 md:w-28 md:mt-3 md:ml-20 md:rounded-md border-2"
+            src="photography.png"
+            height="200"
+            alt=""
+          />
+
+          <div class="p-1 mt-2">
+            <h5 class="text-gray-900 text-lg lg:text-xl font-semibold mb-2">
+              photographs
+            </h5>
+            <p class="text-gray-700 w- font-base mb-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Accusamus, distinctio?
+            </p>
+            <a href="/dist/photo store/photographstore.html">
+              <button
+                type="button"
+                class="lg:text-base lg:mb-5 mb-5 md:mt-4 md:mr-3 inline-block px-8 py-2.5 bg-green-500 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-green-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+              >
+                View
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Artwork submit -->
+    <div class="text-center justify-center items-center my-4 bg-lime-100 h-96">
+      <p
+        class="text-black font-semibold lg:text-5xl md:text-4xl text-xl mx-4 mb-0 pt-36"
+      >
+        Create Your Portfolio
+      </p>
+      <p>
+        Join & Create your Artist Profile and Submit your Artworks to the Global
+        Community of Art Space.
+      </p>
+      <button
+        type="button"
+        class="lg:text-base lg:mt-4 mt-8 px-8 py-2.5 bg-lime-600 text-white font-medium text-xs leading-tight uppercase rounded-3xl shadow-md hover:bg-lime-700 hover:shadow-lg focus:bg-lime-800 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+      >
+        Submit Your ArtWork
+      </button>
+    </div>
+    <div class="text-center font-semibold lg:text-4xl mt-20">
+      <p>Community Support From us</p>
+    </div>
+
+    <!-- Community -->
+    <section id="Community" >
+    <div class="container mx-auto lg:p-5">
+      <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:gap-4">
+        <!-- card-1 -->
+        <div class="flex items-center justify-center mb-4 m-5">
+          <div
+            class="text-start bg-slate-100 rounded-lg justify-evenly border-b-4 border-solid border-green-600 lg:hover:shadow-xl hover:rounded-lg hover:shadow-xl"
+          >
+            <div class="lg:m-8">
+              <div class="w-40 mr-8 p-3">
+                <img
+                  class="object-contain h-24"
+                  src="support.png"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="mr-4 p-1">
+                <div class="p-1 mt-2">
+                  <h5
+                    class="text-gray-900 text-lg lg:text-xl font-semibold mb-2"
+                  >
+                    Support Artist
+                  </h5>
+                  <p class="text-gray-700 w- font-base mb-4">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Architecto dicta repellat ea, maxime nulla porro, magnam
+                    quas voluptatum tempore veritatis, libero placeat tenetur
+                    aspernatur sequi reprehenderit adipisci aperiam! Sunt
+                    accusantium soluta est corrupti ex quas minima error,
+                    architecto illum. Labore?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card -2 -->
+        <div class="flex items-center justify-center mb-4 m-5">
+          <div
+            class="text-start bg-slate-100 rounded-lg justify-evenly border-b-4 border-solid border-yellow-600 lg:hover:shadow-xl hover:rounded-lg hover:shadow-xl"
+          >
+            <div class="lg:m-8">
+              <div class="w-40 mr-8 p-3">
+                <img
+                  class="object-contain h-24"
+                  src="social-media.png"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="mr-4 p-1">
+                <div class="p-1 mt-2">
+                  <h5
+                    class="text-gray-900 text-lg lg:text-xl font-semibold mb-2"
+                  >
+                    Social Impact
+                  </h5>
+                  <p class="text-gray-700 w- font-base mb-4">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Architecto dicta repellat ea, maxime nulla porro, magnam
+                    quas voluptatum tempore veritatis, libero placeat tenetur
+                    aspernatur sequi reprehenderit adipisci aperiam! Sunt
+                    accusantium soluta est corrupti ex quas minima error,
+                    architecto illum. Labore?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- cards end -->
+      <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:gap-4">
+        <!-- card-3 -->
+        <div class="flex items-center justify-center mb-4 m-5">
+          <div
+            class="text-start bg-slate-100 rounded-lg justify-evenly border-b-4 border-solid border-teal-500 lg:hover:shadow-xl hover:rounded-lg hover:shadow-xl"
+          >
+            <div class="lg:m-8">
+              <div class="w-40 mr-8 p-3">
+                <img
+                  class="object-contain h-24"
+                  src="paint-palette.png"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="mr-4 p-2">
+                <div class="p-1 mt-2">
+                  <h5
+                    class="text-gray-900 text-lg lg:text-xl font-semibold mb-2"
+                  >
+                    Promote Art
+                  </h5>
+                  <p class="text-gray-700 w- font-base mb-4">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Architecto dicta repellat ea, maxime nulla porro, magnam
+                    quas voluptatum tempore veritatis, libero placeat tenetur
+                    aspernatur sequi reprehenderit adipisci aperiam! Sunt
+                    accusantium soluta est corrupti ex quas minima error,
+                    architecto illum. Labore?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card-4 -->
+        <div class="flex items-center justify-center mb-4 m-5">
+          <div
+            class="text-start bg-slate-100 rounded-lg justify-evenly border-b-4 border-solid border-teal-500 lg:hover:shadow-xl hover:rounded-lg hover:shadow-xl"
+          >
+            <div class="lg:m-8">
+              <div class="w-40 mr-8 p-3">
+                <img
+                  class="object-contain h-24"
+                  src="bid.png"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="mr-4 p-2">
+                <div class="p-1 mt-2">
+                  <h5
+                    class="text-gray-900 text-lg lg:text-xl font-semibold mb-2"
+                  >
+                    Auction
+                  </h5>
+                  <p class="text-gray-700 w- font-base mb-4">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Architecto dicta repellat ea, maxime nulla porro, magnam
+                    quas voluptatum tempore veritatis, libero placeat tenetur
+                    aspernatur sequi reprehenderit adipisci aperiam! Sunt
+                    accusantium soluta est corrupti ex quas minima error,
+                    architecto illum. Labore?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- FaQ Section  -->
+    <!-- component -->
+
+    <style>
+      * {
+        font-family: "Quicksand", sans-serif;
+      }
+    </style>
+
+   
+      <article id="the-article">
+        <div>
+          <div class="mx-auto max-w-6xl">
+            <div class="p-2 rounded">
+              <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/3 p-4 text-sm">
+                  <div class="sticky inset-x-0 top-0 left-0 py-12">
+                    <div class="text-3xl text-green-400 mb-8">
+                      Frequently asked questions.
+                    </div>
+                    
+
+                    <div class="relative text-gray-600 mt-8 lg:mr-16">
+                      <input
+                        x-ref="searchField"
+                        x-model="search"
+                        x-on:keydown.window.prevent.slash="$refs.searchField.focus()"
+                        type="search"
+                        name="serch"
+                        placeholder="Search"
+                        class="bg-white w-full h-10 px-5 rounded-full text-sm focus:outline-none"
+                      />
+                      <button
+                        type="submit"
+                        class="focus:outline-none absolute right-0 top-0 mt-3 mr-4"
+                      >
+                        <svg
+                          class="h-4 w-4 fill-current"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          version="1.1"
+                          id="Capa_1"
+                          x="0px"
+                          y="0px"
+                          viewBox="0 0 56.966 56.966"
+                          style="enable-background: new 0 0 56.966 56.966"
+                          xml:space="preserve"
+                          width="512px"
+                          height="512px"
+                        >
+                          <path
+                            d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="md:w-2/3 py-12">
+                  <div class="p-4">
+                    <div class="item px-6 py-6" x-data="{isOpen : false}">
+                      <a
+                        href="#"
+                        class="flex items-center justify-between"
+                        @click.prevent="isOpen = true"
+                      >
+                        <h4
+                          :class="{'text-green-400 font-medium' : isOpen == true}"
+                        >
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, illum.
+                        </h4>
+                        <svg
+                          :class="{'transform rotate-180' : isOpen == true}"
+                          class="w-5 h-5 text-gray-500"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                      </a>
+                      <div
+                        x-show="isOpen"
+                        @click.away="isOpen = false"
+                        class="mt-3"
+                        :class="{'text-gray-600' : isOpen == true}"
+                      >
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat. Duis aute irure dolor in
+                          reprehenderit in voluptate velit esse cillum dolore eu
+                          fugiat nulla pariatur. Excepteur sint occaecat
+                          cupidatat non proident, sunt in culpa qui officia
+                          deserunt mollit anim id est laborum.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="item px-6 py-6" x-data="{isOpen : false}">
+                      <a
+                        href="#"
+                        class="flex items-center justify-between"
+                        @click.prevent="isOpen = true"
+                      >
+                        <h4
+                          :class="{'text-green-400 font-medium' : isOpen == true}"
+                        >
+                          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        </h4>
+                        <svg
+                          :class="{'transform rotate-180' : isOpen == true}"
+                          class="w-5 h-5 text-gray-500"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                      </a>
+                      <div
+                        x-show="isOpen"
+                        @click.away="isOpen = false"
+                        class="mt-3"
+                        :class="{'text-gray-600' : isOpen == true}"
+                      >
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat. Duis aute irure dolor in
+                          reprehenderit in voluptate velit esse cillum dolore eu
+                          fugiat nulla pariatur. Excepteur sint occaecat
+                          cupidatat non proident, sunt in culpa qui officia
+                          deserunt mollit anim id est laborum.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="item px-6 py-6" x-data="{isOpen : false}">
+                      <a
+                        href="#"
+                        class="flex items-center justify-between"
+                        @click.prevent="isOpen = true"
+                      >
+                        <h4
+                          :class="{'text-green-400 font-medium' : isOpen == true}"
+                        >
+                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, eius voluptatibus. Quia!
+                        </h4>
+                        <svg
+                          :class="{'transform rotate-180' : isOpen == true}"
+                          class="w-5 h-5 text-gray-500"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                      </a>
+                      <div
+                        x-show="isOpen"
+                        @click.away="isOpen = false"
+                        class="mt-3"
+                        :class="{'text-gray-600' : isOpen == true}"
+                      >
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat. Duis aute irure dolor in
+                          reprehenderit in voluptate velit esse cillum dolore eu
+                          fugiat nulla pariatur. Excepteur sint occaecat
+                          cupidatat non proident, sunt in culpa qui officia
+                          deserunt mollit anim id est laborum.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="item px-6 py-6" x-data="{isOpen : false}">
+                      <a
+                        href="#"
+                        class="flex items-center justify-between"
+                        @click.prevent="isOpen = true"
+                      >
+                        <h4
+                          :class="{'text-green-400 font-medium' : isOpen == true}"
+                        >
+                          Lorem ipsum, dolor sit amet consectetur adipisicing.
+                        </h4>
+                        <svg
+                          :class="{'transform rotate-180' : isOpen == true}"
+                          class="w-5 h-5 text-gray-500"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                      </a>
+                      <div
+                        x-show="isOpen"
+                        @click.away="isOpen = false"
+                        class="mt-3"
+                        :class="{'text-gray-600' : isOpen == true}"
+                      >
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat. Duis aute irure dolor in
+                          reprehenderit in voluptate velit esse cillum dolore eu
+                          fugiat nulla pariatur. Excepteur sint occaecat
+                          cupidatat non proident, sunt in culpa qui officia
+                          deserunt mollit anim id est laborum.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="item px-6 py-6" x-data="{isOpen : false}">
+                      <a
+                        href="#"
+                        class="flex items-center justify-between"
+                        @click.prevent="isOpen = true"
+                      >
+                        <h4
+                          :class="{'text-green-400 font-medium' : isOpen == true}"
+                        >
+                          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime.
+                        </h4>
+                        <svg
+                          :class="{'transform rotate-180' : isOpen == true}"
+                          class="w-5 h-5 text-gray-500"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                      </a>
+                      <div
+                        x-show="isOpen"
+                        @click.away="isOpen = false"
+                        class="mt-3"
+                        :class="{'text-gray-600' : isOpen == true}"
+                      >
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat. Duis aute irure dolor in
+                          reprehenderit in voluptate velit esse cillum dolore eu
+                          fugiat nulla pariatur. Excepteur sint occaecat
+                          cupidatat non proident, sunt in culpa qui officia
+                          deserunt mollit anim id est laborum.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="item px-6 py-6" x-data="{isOpen : false}">
+                      <a
+                        href="#"
+                        class="flex items-center justify-between"
+                        @click.prevent="isOpen = true"
+                      >
+                        <h4
+                          :class="{'text-green-400 font-medium' : isOpen == true}"
+                        >
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, itaque.
+                        </h4>
+                        <svg
+                          :class="{'transform rotate-180' : isOpen == true}"
+                          class="w-5 h-5 text-gray-500"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                      </a>
+                      <div
+                        x-show="isOpen"
+                        @click.away="isOpen = false"
+                        class="mt-3"
+                        :class="{'text-gray-600' : isOpen == true}"
+                      >
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat. Duis aute irure dolor in
+                          reprehenderit in voluptate velit esse cillum dolore eu
+                          fugiat nulla pariatur. Excepteur sint occaecat
+                          cupidatat non proident, sunt in culpa qui officia
+                          deserunt mollit anim id est laborum.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <div
+        x-data="scrollHandler(document.getElementById('the-article'))"
+        x-cloak
+        aria-hidden="true"
+        @scroll.window="calculateHeight(window.scrollY)"
+        class="fixed h-screen w-1 hover:bg-gray-200 top-0 left-0 bg-gray-300"
+      >
+        <div :style="`max-height:${height}%`" class="h-full bg-green-400"></div>
+      </div>
+
+      <div
+        id="alpine-devtools"
+        x-data="devtools()"
+        x-show="alpines.length"
+        x-init="start()"
+      ></div>
+      <script>
+        function scrollHandler(element = null) {
+          return {
+            height: 0,
+            element: element,
+            calculateHeight(position) {
+              const distanceFromTop = this.element.offsetTop;
+              const contentHeight = this.element.clientHeight;
+              const visibleContent = contentHeight - window.innerHeight;
+              const start = Math.max(0, position - distanceFromTop);
+              const percent = (start / visibleContent) * 100;
+              requestAnimationFrame(() => {
+                this.height = percent;
+              });
+            },
+            init() {
+              this.element = this.element || document.body;
+              this.calculateHeight(window.scrollY);
+            },
+          };
+        }
+      </script>
+    
+    <!-- FaQ Section  -->
+    <div
+      class="border-t-2 border-gray-300 bg-slate-200 flex flex-col md:flex-row md:justify-between text-center py-5 text-sm lg:mt-20"
+    >
+      <div class="mb-4">
+        <a href="#Home" class="mx-2.5">Home</a>
+        <a href="#Categories" class="mx-2.5">Categorie</a>
+        <a href="#Community" class="mx-2.5">Community</a>
+        <a href="#FAQ" class="mx-2.5">FAQ</a>
+      </div>
+      <p>&copy; Copyright Reserved 2021</p>
+    </div>
+
+    <script>
+      const navLinks = document.querySelector(".nav-links");
+      function onToggleMenu(e) {
+        e.name = e.name === "menu" ? "close" : "menu";
+        navLinks.classList.toggle("top-[1px]");
+      }
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
