@@ -1,0 +1,59 @@
+html,body
+{
+	height: 100%;
+}
+
+html
+{
+	display: table;
+	margin: auto;
+}
+
+body 
+{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+
+.penny
+{
+	height: 25px;
+	width: 25px;
+	border: 2px black solid;
+	background-color: saddlebrown;
+	border-radius: 100%;
+}
+
+#pieces
+{
+	height: 120px;
+	width: 233px;
+	display: flex;
+	align-content: flex-start;
+	flex-wrap: wrap;
+	background-color: tan;
+}
+
+#info, #feedback
+{
+	border: 5px saddlebrown inset;
+	background-color: tan;
+	padding: 5px;
+	width: 213px;
+	min-height: 50px;
+}
+
+h3
+{
+	text-align: center;
+	margin: 0;
+}
+
+button
+{
+	background-color: saddlebrown;
+	border-radius: 10px;
+	color: white;
+	width: 75px;
+}
