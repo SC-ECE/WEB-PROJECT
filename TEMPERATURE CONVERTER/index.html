@@ -1,50 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-
-  <title>Temperature Converter</title>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
-
   <div class="container">
-    <div class="row justify-content-md-center">
-      <div class="col-md-6 text-center">
-        <h1>Temperature Converter</h1>
-
-        <div id="celsius">
-          <input type="number" class="form-control form-control-lg form-padding" id="input-celsius" placeholder="celsius">
-
-        </div>
-
-        <div id="fahrenheit">
-          <input type="number" class="form-control form-control-lg form-padding" id="input-fahrenheit" placeholder="fahrenheit">
-
-        </div>
-
-        <div id="kelvin">
-          <input type="number" class="form-control form-control-lg form-padding" id="input-kelvin" placeholder="kelvin">
-
-        </div>
-
+      <h1 class="heading">Temperature Converter</h1>
+      <div class="temp-container">
+        <label for="celsius">Celsius:</label>
+        <input
+          onchange="computeTemp(event)"
+          type="number"
+          name="celsius"
+          id="celsius"
+          placeholder="Enter Temperature"
+          class="input"
+        />
       </div>
-
+      <div class="temp-container">
+        <label for="fahrenheit">Fahrenheit:</label>
+        <input
+          onchange="computeTemp(event)"
+          type="number"
+          name="fahrenheit"
+          id="fahrenheit"
+          placeholder="Enter Temperature"
+          class="input"
+        />
+      </div>
+      <div class="temp-container">
+        <label for="kelvin">Kelvin:</label>
+        <input
+          onchange="computeTemp(event)"
+          type="number"
+          name="kelvin"
+          id="kelvin"
+          placeholder="Enter Temperature"
+          class="input"
+        />
+      </div>
     </div>
-    <footer>
-          <p>By Elle J.</p>
-          <p><a href="https://github.com/itsellej" target="_blank"><img class="icons" src="https://res.cloudinary.com/itsellej/image/upload/v1533400136/rock-paper-scissors/github-icon.png" alt="Github icon"></a>
-            <a href="https://codepen.io/itsellej/" target="_blank"><img class="icons" src="https://res.cloudinary.com/itsellej/image/upload/v1533400135/rock-paper-scissors/codepen-icon.png" alt="Codepen icon"></a></p>
-          <p><em>Credit - icons from <a href="https://pngtree.com/">pngtree</a></em></p>
-        </footer>
-
-  </div>
-
-  <script src="main.js" charset="utf-8"></script>
+  <script src="script.js"></script>
+  
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
 </body>
+
 </html>

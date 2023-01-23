@@ -1,45 +1,24 @@
-const celsiusInput = document.querySelector('#celsius > input');
-const fahrenheitInput = document.querySelector('#fahrenheit > input');
-const kelvinInput = document.querySelector('#kelvin > input');
+const celsiusEl = document.getElementById("celsius");
+const fahrenheitEl = document.getElementById("fahrenheit");
+const kelvinEl = document.getElementById("kelvin");
 
-const roundToTwoDP = (num) => {
-  return num.toFixed(2);
-};
+function computeTemp(event) {
+  const currentValue = +event.target.value;
 
-
-const celsiusToFaAndKe = () => {
-  const celsiusTemp = parseFloat(celsiusInput.value);
-  const fahrenheitTemp = (celsiusTemp * 1.8) + 32;
-  const kelvinTemp = celsiusTemp + 273.15;
-
-  fahrenheitInput.value = roundToTwoDP(fahrenheitTemp);
-  kelvinInput.value = roundToTwoDP(kelvinTemp);
-};
-
-
-const fahrenheitToCeAndKe = () => {
-  const fahrenheitTemp = parseFloat(fahrenheitInput.value);
-  const celsiusTemp = (fahrenheitTemp - 32) * (5 / 9);
-  const kelvinTemp = (fahrenheitTemp + 459.67) * (5 / 9);
-
-  celsiusInput.value = roundToTwoDP(celsiusTemp);
-  kelvinInput.value = roundToTwoDP(kelvinTemp);
-};
-
-const kelvinToCeAndFa = () => {
-  const kelvinTemp = parseFloat(kelvinInput.value);
-  const celsiusTemp = kelvinTemp - 273;
-  const fahrenheitTemp =  1.8 * (kelvinTemp - 273) + 32;
-
-  celsiusInput.value = roundToTwoDP(celsiusTemp);
-  fahrenheitInput.value = roundToTwoDP(fahrenheitTemp);
-};
-
-
-const main = () => {
-  celsiusInput.addEventListener('input', celsiusToFaAndKe);
-  fahrenheitInput.addEventListener('input', fahrenheitToCeAndKe);
-  kelvinInput.addEventListener('input', kelvinToCeAndFa);
-};
-
-main();
+  switch (event.target.name) {
+    case "celsius":
+      kelvinEl.value = (currentValue + 273.32).toFixed(2);
+      fahrenheitEl.value = (currentValue * 1.8 + 32).toFixed(2);
+      break;
+    case "fahrenheit":
+      celsiusEl.value = ((currentValue - 32) / 1.8).toFixed(2);
+      kelvinEl.value = ((currentValue - 32) / 1.8 + 273.32).toFixed(2);
+      break;
+    case "kelvin":
+      celsiusEl.value = (currentValue - 273.32).toFixed(2);
+      fahrenheitEl.value = ((currentValue - 273.32) * 1.8 + 32).toFixed(2);
+      break;
+    default:
+      break;
+  }
+}
