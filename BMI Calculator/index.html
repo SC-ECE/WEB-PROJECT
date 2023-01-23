@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+      </head>
+      
+<head>
+  <title>BMI Calculator</title>
+  <link src="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+  	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<!-- CSS Stylesheet -->
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+	<!-- Font Awsome -->
+	<script src="https://kit.fontawesome.com/458b888782.js" crossorigin="anonymous"></script>
+
+	<!-- Bootstrap link -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+  
+</head>
+<body>
+  <section id="title"  >
+    <div class="container-fluid">
+
+      <!--Nav Bar-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        
+          <a class="navbar-brand" href="#home">BMI Calculator</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#chart">Range</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Others
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#risks">Risks</a></li>
+                  <li><a class="dropdown-item" href="#limitations">Limitations of BMI</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#footer">Contact</a></li>
+                </ul>
+              </li>
+
+            <!--               
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            
+            -->
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        
+      </nav>
+
+
+    </div>
+
+
+    	<!-- Title -->
+
+			<div class="row">
+				<div class="col-lg-6">
+					<h1 class="line">Check your BMI now.</h1>
+          <div class="icons" >
+            <button type="button" class="btn btn-dark btn-lg download_button"><i class="fa-brands fa-apple"></i> Download</button>
+
+            <button type="button" class="btn btn-dark btn-lg download_button"><i class="fa-brands fa-google-play"></i> Download</button>
+  
+          </div>
+					
+				</div>
+				
+
+			</div>
+
+  </section>
+
+
+<!--BMI Calculations-->
+<section class="calculation" id="home">
+  <div class="mb-3">
+    <label for="formGroupExampleInput" class="form-label">Weight(Kg)</label>
+    <input type="number" class="form-control" id="weight" placeholder="Enter the weight in Kg">
+  </div>
+  <div class="mb-3">
+    <label for="formGroupExampleInput2" class="form-label">Height(cm)</label>
+    <input type="number" class="form-control" id="height" placeholder="Enter the height in cm">
+  </div>
+  
+  <button type="button"  class="btn btn-secondary btn-lg" class="button" onclick="calculateBMI()">Calculate BMI</button>
+  
+  <p id="output" class="output"></p>
+  <script src="bmi.js"></script>
+</section>
+<br>
+<br>
+<br>
+
+
+<br>
+
+	<!-- Chart -->
+
+	<section id="chart">
+
+	<div class="chart_for_adults">
+    <h1> BMI Table for Adults</h1>
+    <br>
+    <br>
+<!-- chart -->
+<table  class="table table-hover table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">SL No.</th>
+      <th scope="col">Category</th>
+      <th scope="col">BMI Range - kg/m^2</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Severe Thinness</td>
+      <td> less than 16 </td>
+      
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Modarate Thinness</td>
+      <td>16-17</td>
+      
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Mild Thinness</td>
+      <td>17-18.5</td>
+      
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>Normal</td>
+      <td>18.5-25</td>
+      
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td>Overweight</td>
+      <td>25-30</td>
+      
+    </tr>
+    <tr>
+      <th scope="row">6</th>
+      <td>Obese Class I</td>
+      <td>30-35</td>
+      
+    </tr>
+    <tr>
+      <th scope="row">7</th>
+      <td>Obese Class II</td>
+      <td>35-40</td>
+      
+    </tr>
+    <tr>
+      <th scope="row">8</th>
+      <td>Obese Class III</td>
+      <td>40-45</td>
+    </tr>    
+  </tbody>
+</table>
+</div>
+</section>
+  
+<br>
+<br>
+
+<h1> BMI Table for Children and Teen</h1>
+<br>
+
+	<!-- Chart -->
+
+<section id="chart1">
+  
+  <div class="chart_for_children">
+
+    <table  class="table table-hover table-bordered" >
+      <tbody>
+        <thead>
+          <tr>
+            <th scope="col">SL No.</th>
+            <th scope="col">Category</th>
+            <th scope="col">BMI Range - kg/m^2</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Underweight</td>
+            <td>less than 5%</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Healthy weight</td>
+            <td>5%-85%</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>At risk of Overweight</td>
+            <td>85%-95%</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Overweight</td>
+            <td>more than 95%</td>
+          </tr>
+        </tbody>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<br>
+<br>
+<br>
+<!-- Risks associated with being overweight -->
+<section class="risks" id="risks">
+<h1>Risks associated with being overweight</h1>
+<p class="risks_para">Being overweight increases the risk of a number of serious diseases and health conditions. Below is a list of said risks, according to the Centers for Disease Control and Prevention (CDC):</p>
+  <li class="lists" >High blood pressure</li>
+  <li class="lists">Higher levels of LDL cholesterol, which is widely considered "bad cholesterol," lower levels of HDL cholesterol, considered to be good cholesterol in moderation, and high levels of triglycerides</li>
+  <li class="lists">Type II diabetes</li>
+  <li class="lists">Coronary heart disease</li>
+  <li class="lists">Stroke</li>
+  <li class="lists">Gallbladder disease</li>
+  <li class="lists">Osteoarthritis, a type of joint disease caused by breakdown of joint cartilage</li>
+  <li class="lists">Sleep apnea and breathing problems</li>
+  <li class="lists">Certain cancers (endometrial, breast, colon, kidney, gallbladder, liver)</li>
+  <li class="lists">Low quality of life</li>
+  <li class="lists">Mental illnesses such as clinical depression, anxiety, and others</li>
+  <li class="lists">Body pains and difficulty with certain physical functions</li>
+  <li class="lists">Generally, an increased risk of mortality compared to those with a healthy BMI</li>
+  <p class="risks_para">  As can be seen from the list above, there are numerous negative, in some cases fatal, outcomes that may result from being overweight. Generally, a person should try to maintain a BMI below 25 kg/m2, but ideally should consult their doctor to determine whether or not they need to make any changes to their lifestyle in order to be healthier</p>
+
+</section>
+
+<section class="risks1" >
+<h1>Risks associated with being underweight</h1>
+
+<p class="risks_para">
+  Being underweight has its own associated risks, listed below:
+</p>
+<li class="lists">Malnutrition, vitamin deficiencies, anemia (lowered ability to carry blood vessels) </li>
+<li class="lists">Osteoporosis, a disease that causes bone weakness, increasing the risk of breaking a bone </li>
+<li class="lists">A decrease in immune function
+</li>
+<li class="lists"> Growth and development issues, particularly in children and teenagers</li>
+<li class="lists">Possible reproductive issues for women due to hormonal imbalances that can disrupt the menstrual cycle. Underweight women also have a higher chance of miscarriage in the first trimester</li>
+<li class="lists"> Potential complications as a result of surgery</li>
+<li class="lists">Generally, an increased risk of mortality compared to those with a healthy BMI</li>
+
+<p class="risks_para">
+  In some cases, being underweight can be a sign of some underlying condition or disease such as anorexia nervosa, which has its own risks. Consult your doctor if you think you or someone you know is underweight, particularly if the reason for being underweight does not seem obvious.
+</p>
+</section>
+
+<section class="limitations" id="limitations">
+
+  <h1>Limitations of BMI</h1>
+  <p class = "risks_para">Although BMI is a widely used and useful indicator of healthy body weight, it does have its limitations. BMI is only an estimate that cannot take body composition into account. Due to a wide variety of body types as well as distribution of muscle, bone mass, and fat, BMI should be considered along with other measurements rather than being used as the sole method for determining a person's healthy body weight.</p>
+  <h3>In adults:</h3>
+  <p class="risks_para">
+    BMI cannot be fully accurate because it is a measure of excess body weight, rather than excess body fat. BMI is further influenced by factors such as age, sex, ethnicity, muscle mass, body fat, and activity level, among others. For example, an older person who is considered a healthy weight, but is completely inactive in their daily life may have significant amounts of excess body fat even though they are not heavy. This would be considered unhealthy, while a younger person with higher muscle composition of the same BMI would be considered healthy. In athletes, particularly bodybuilders who would be considered overweight due to muscle being heavier than fat, it is entirely possible that they are actually at a healthy weight for their body composition. Generally, according to the CDC:
+  </p>
+<li class="lists">Older adults tend to have more body fat than younger adults with the same BMI</li>
+<li class="lists">Older adults tend to have more body fat than younger adults with the same BMI</li>
+<li class="lists">Muscular individuals and highly trained athletes may have higher BMIs due to large muscle mass.</li>
+<br>
+<h3>In children and adolescents:</h3>
+<p class="risks_para">
+  The same factors that limit the efficacy of BMI for adults can also apply to children and adolescents. Additionally, height and level of sexual maturation can influence BMI and body fat among children. BMI is a better indicator of excess body fat for obese children than it is for overweight children, whose BMI could be a result of increased levels of either fat or fat-free mass (all body components except for fat, which includes water, organs, muscle, etc.). In thin children, the difference in BMI can also be due to fat-free mass.
+
+That being said, BMI is fairly indicative of body fat for 90-95% of the population, and can effectively be used along with other measures to help determine an individual's healthy body weight.
+</p>
+
+</section>
+
+<!-- Call to Action -->
+
+<section class="colored-section" id="cta">
+
+  <div class="container-fluid">
+
+    <h3 class="big-heading">Check-Out our App today.</h3>
+    <button class="download-button btn btn-lg btn-dark" type="button" ><i class="fab fa-apple"></i> Download</button>
+    <button class="download-button btn btn-lg brn-light" type="button"><i class="fab fa-google-play"></i> Download</button>
+  </div>
+</section>
+
+
+
+
+  <!-- Footer -->
+
+  <footer class="white-section" id="footer">
+    <div class="container-fluid">
+      <i class="social-icon fab fa-facebook-f"></i>
+      <i class="social-icon fab fa-twitter"></i>
+      <i class="social-icon fab fa-instagram"></i>
+      <i class="social-icon fas fa-envelope"></i>
+      <p>© Copyright 2018 TinDog</p>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+<!-- 
+
+  <h1>BMI Calculator</h1>
+  <form>
+    <label>Weight (kg): <input type="number" id="weight"></label>
+    <br>
+    <label>Height (cm): <input type="number" id="height"></label>
+    <br>
+  
+  
+  -->
+
