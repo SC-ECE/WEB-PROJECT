@@ -1,0 +1,154 @@
+body {
+    font-family: 'Dosis', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.btn-primary {
+    background-color: #04ddb2;
+    border: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #04ddb2;
+    transform: scale3d(110%, 110%, 110%);
+}
+
+.btn-primary:focus{
+    box-shadow: 0 0 1px 2px black;
+}
+
+nav {
+    font-size: 1.3rem;
+}
+
+nav.bg-light {
+    --bs-bg-opacity: 0.97;
+    background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.navbar-brand {
+    font-weight: 800;
+    font-size: 1.5rem;
+    margin-right: 0.4rem;
+}
+
+svg {
+    margin-top: 0;
+    height: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link {
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    transform: scale3d(1.05, 1.05, 1.05);
+    color: #333;
+}
+
+.download_nav {
+    flex-grow: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    color: #333;
+}
+
+.headings {
+    max-width: 40vw;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+.display-2 {
+    font-weight: 700;
+}
+
+.tour {
+    color: #04ddb2;
+}
+
+section>.container {
+    max-width: 70vw;
+}
+
+.container>img {
+    border-radius: 30px;
+    transition: 0.5s ease-in-out;
+}
+
+.container>img:hover {
+    box-shadow: 0 100px 140px -50px rgb(0 0 0 / 25%);
+    transform: scale3d(1.01, 1.01, 1.01);
+}
+
+ul>li>a.nav-link{
+    font-weight: 400;
+}
+
+li>p.h6{
+    font-weight: 400;
+}
+
+.logo>a>img{
+    vertical-align:text-top;
+}
+
+@media (min-width:576px) {
+    .socials{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 767px) {
+    .company{
+        order: 5;
+    }
+}
+
+@media (max-width: 576px) {
+    .headings{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .socials{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .company{
+        order: 5;
+    }
+}
+.svg-wrap{
+    position:relative;
+    display: inline-block;
+}
