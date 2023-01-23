@@ -8,8 +8,14 @@ Array.from(buttons).forEach((button)=>{
     button.addEventListener('click',(e)=>{
         //if button is = then evaluate the value
         if(e.target.innerHTML== '='){
+            // if(string.includes(".",".")){
+            //     string="";
+            //     alert("Invalid input");
+                
+            // }else{
             string=eval(string);
             document.querySelector('input').value=string;
+            
         }
         //if button is AC then then clear all value
         else if(e.target.innerHTML== 'AC'){

@@ -1,0 +1,161 @@
+body {
+    min-height: 100vh;  /*this ensures that full height is utilised*/
+    margin:0;
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    background-color: #1B1C2A;
+    display: flex;         
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+header {
+    margin: 10px 10px 20px;
+    font-size: large;
+    letter-spacing: 6px;
+    text-align: center;
+    color: #EDF2F4;
+}
+
+h1 {
+    border: 1px solid #BEC5D1;
+    padding: 10px 20px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 3px 0px #BEC5D1;
+}
+
+main {
+    width: 96vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.card {
+    max-height: 30rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 4px 8px 4px #0F1017;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    transition: 0.3s; /*duration of CSS animations*/
+}
+
+.card-upper, .card-lower {
+    flex-grow: 1;
+    padding: 8px 16px 0px 24px;
+    min-height: 13.6rem;        
+    max-width: 15rem;         /*cards will grow to take up extra space till max-width is reached*/
+    border-radius: 8px;
+}
+
+ul {
+    margin-top: 2px;
+    list-style: none;
+    padding-left: 0px;
+}
+
+li {
+    line-height: 20px;
+}
+
+h2 {
+    letter-spacing: 4px;
+}
+
+a {
+    align-self: center;
+    margin-right: auto;
+    margin-left: 16px;
+    margin-top: -16px;
+    z-index: 9;         /*higher z-index value indicates this will stack at the topmost*/
+    display: block;
+    padding: 8px 16px;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: 90ms; 
+    color: #0F1017;
+    border: 1px solid rgb(255, 69, 0, 0.3);
+    box-shadow: 1px 1px 3px 0.1px rgb(255, 69, 0);
+    background-color: rgb(255, 202, 67);
+}
+
+.card-upper {       /*using CSS Cascade to define different styles from the ones already declared above for this element*/
+    margin-bottom: 0;
+    background-color: #EDF2F4;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    display: flex;                  /*nested flexboxes*/
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+.card-lower {
+    margin-top: -21px;
+    padding-top: 32px;
+    background-color: #BEC5D1;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.most-popular>.card-upper {
+    background-color: #EF233C;
+    color: white;
+}
+
+.most-popular>.card-lower {
+    color: white;
+    background-color: #df082b;
+}
+
+.price {
+    margin-left: 4px;
+    font-size: 2.4rem;
+    font-weight: 300;
+    margin-top: 0;
+    padding-bottom: 20px;
+}
+
+
+#no-discount {
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-decoration: line-through;
+    align-self: flex-start;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding-right: 20px;
+}
+
+#most-popular{  /*most-popular div is hidden until it is hovered over*/
+    display: none;
+}
+
+.most-popular>.card-upper>.price {
+    font-weight: 400;
+    margin-left: -4px;
+}
+
+.most-popular>.card-lower>ul {
+    font-weight: 600;
+}
+
+.sub {
+    font-size: 0.96rem;
+    vertical-align: baseline;   /*to align the subscript text with other text's baseline*/
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 8px;
+    color: #EDF2F4;
+    text-align: center;
+}
+

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Selector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <label for="color">&lt;meta name="theme-color" content="<span class="preview"></span>"&gt;</label>
+        <input id="color" type="color" value="#6224b5">
+      </div>
+    <script>
+        const meta = document.querySelector( 'meta[name="theme-color"]' );
+const input = document.querySelector( 'input' );
+const preview = document.querySelector( '.preview' );
+
+document.querySelector( 'input' ).oninput = event => updateColor();
+
+function updateColor() {
+  meta.setAttribute( 'content', input.value );
+  preview.innerHTML = input.value;
+  document.body.style.backgroundColor = input.value;
+}
+
+updateColor();
+    </script>
+</body>
+</html>
