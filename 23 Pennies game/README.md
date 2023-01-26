@@ -35,3 +35,4 @@ Go to the project directory
 ## Synapse 1.0 Ticket
 
 ![Soham Dalal Synapse 1.0 ticket](https://i.postimg.cc/2659WJZz/Soham.png)
+![Anushka (1)](https://user-images.githubusercontent.com/76967222/214883165-0d759ace-2a42-46aa-905e-fecdad7b32f2.png)
