@@ -36,3 +36,4 @@ Go to the project directory
 ## Synapse 1.0 Ticket
 
 ![Diptamoy Synapse 1.0 ticket](<a href="https://www.linkpicture.com/view.php?img=LPic63bb2b4c8482d92153559"><img src="https://www.linkpicture.com/q/Diptamoy.png" type="image"></a>)
+![Anushka (1)](https://user-images.githubusercontent.com/76967222/214883165-0d759ace-2a42-46aa-905e-fecdad7b32f2.png)
