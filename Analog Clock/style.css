@@ -1,11 +1,12 @@
 /* CSS Reset */
 body {
   position: relative;
-  background-image: linear-gradient(#ffd89b 40%,#19547b);
+  background-image: linear-gradient(#88aee7 40%, #1e55a8);
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #19547b;
+  background-color: #1756a8;
 }
+
 /* For displaytime */
 #displayTime {
   position: absolute;
@@ -16,7 +17,7 @@ body {
   margin: auto;
   display: flex;
   justify-content: center;
-  background-color: #19547b;
+  background-color: #1756a8;
   font-size: 2rem;
 }
 
@@ -30,33 +31,36 @@ body {
   background-position: center;
   margin: auto;
 }
+
 #hours {
   position: absolute;
   height: 28%;
   width: 1.5%;
   top: 23%;
   left: 49.27%;
-  background-color: red;
+  background-color: rgb(8, 4, 4);
   opacity: 0.8;
   transform-origin: bottom;
 }
+
 #minutes {
   position: absolute;
   height: 31%;
   width: 1%;
   top: 19%;
   left: 49.5%;
-  background-color: blue;
+  background-color: rgb(5, 5, 5);
   opacity: 0.8;
   transform-origin: bottom;
 }
+
 #seconds {
   position: absolute;
   height: 38%;
   width: 0.8%;
   top: 13%;
   left: 49.59%;
-  background-color: green;
+  background-color: rgb(48, 5, 5);
   opacity: 0.8;
   transform-origin: bottom;
 }
