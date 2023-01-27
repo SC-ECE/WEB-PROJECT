@@ -13,5 +13,9 @@ This is a responsive crossword puzzle game
 
 ## Overview of the site:
 
+https://user-images.githubusercontent.com/87390353/215170448-0234c91a-efd5-4283-a6c4-8c41685ddb36.mp4
 
 ## Synapse 1.0 Ticket
+
+![Anushka](https://user-images.githubusercontent.com/87390353/215170546-48fb7c83-3d71-4031-8c03-4f8920a3fec1.png)
+
