@@ -5,6 +5,7 @@ A notification page using Bootstrap and Basic JS.
 ## Table of contents
 
 - [Overview](#overview)
+  - [Ticket](#ticket)
   - [Features](#features)
   - [Screenshot](#screenshot)
   - [Links](#links)
@@ -16,6 +17,9 @@ A notification page using Bootstrap and Basic JS.
 - [Acknowledgements](#acknowledgements)
 
 ## Overview
+
+### Ticket
+<img src = "final/ticket.png">
 
 ### Features
 
