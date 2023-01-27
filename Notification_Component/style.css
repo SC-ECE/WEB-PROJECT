@@ -1,0 +1,102 @@
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: hsl(219, 12%, 42%);
+    font-size: 16px;
+}
+
+.btn-primary, .btn-primary:hover{
+    border-color: hsl(219, 85%, 26%);
+    background-color: hsl(219, 85%, 26%);
+}
+
+.unread{
+    background-color:  hsl(210, 60%, 98%);
+}
+
+.user, .notif, .post, .grp, #notif-count{
+    font-weight: 800;
+}
+
+.notif{
+    font-size: 1.2rem;
+}
+
+#notif-count{
+    background-color: hsl(219, 85%, 26%);
+    color: white;
+}
+
+.notif, #notif-count{
+    vertical-align: text-bottom;
+}
+
+
+.user a, .message a, .grp a, .post a{
+    text-decoration: none;
+}
+
+.post a, #read-toggle{
+    color: hsl(219, 12%, 42%);
+}
+
+#read-toggle:hover, #read-toggle:focus, #read-toggle:active{
+    color:hsl(219, 85%, 26%);
+}
+
+.post a:hover, .post a:focus, .post a:active{
+    color: hsl(219, 85%, 26%);
+}
+
+.notif, .user a{
+    color: hsl(224, 21%, 14%);
+}
+
+.user a:hover, .user a:focus, .user a:active{
+    color: hsl(219, 85%, 26%);
+}
+
+.message a{ 
+    color: hsl(219, 12%, 42%);
+    border-color: hsl(219, 14%, 63%);
+}
+
+.message:hover, .message:focus, .message:active{
+    background-color: hsl(211, 68%, 94%);
+}
+
+.grp a, .grp a:hover, .grp a:focus{
+    color: hsl(219, 85%, 26%);
+}
+
+.time{
+    color:hsl(219, 14%, 63%);
+}
+
+.indicator{
+    display: inline;
+    position: absolute;
+    margin: 9px 10px;  
+    border-radius: 50%;
+    width:8px;
+    height:8px;
+    background-color: hsl(1, 90%, 64%);
+}
+
+img{
+    max-width: 50px;
+    max-height: 50px;
+}
+
+footer{
+    color: hsl(219, 85%, 26%);
+}
+
+/* adding shadows at larger screen size */
+
+@media (min-width: 769px) {
+    main.container{
+        max-width: 60vw;
+        border-radius: 1rem;
+        box-shadow: 0rem 1rem 3rem 0.1rem rgb(212, 212, 212);
+    }    
+}
