@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sicilian Pizzas</title>
+    <style>
+      h1 {
+        text-align: center;
+        font-size: 34px;
+        color: #b1140c;
+        font-weight: bold;
+        border: 1px solid rgb(0, 0, 0);
+        padding: 18px;
+        border-radius: 4px;
+        font-family: "Cerebri Sans", Helvetica, Arial, sans-serif;
+        border-color: #b1140c;
+        border-width: 3px;
+      }
+      h2 {
+        font-weight: bold;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        padding: 10px;
+        text-align: center;
+        color: #b1140c;
+      }
+      img {
+        margin: 0 auto;
+        max-width: fit-content;
+        border-radius: 7px;
+        display: block;
+        border-radius: 4px;
+      }
+      p {
+        line-height: 1.2;
+        font-size: 17px;
+        display: block;
+        text-align: inline-block;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        /* background: linear-gradient(
+          109.6deg,
+          rgb(232, 252, 252) 11.2%,
+          rgb(252, 215, 134) 56.2%,
+          rgb(247, 124, 124) 100.2%
+        );*/
+      }
+      body {
+        /*background: linear-gradient(to right, #efd761 0%, #f66b6d 100%);*/
+        background: linear-gradient(
+          109.6deg,
+          rgb(232, 252, 252) 11.2%,
+          rgb(252, 215, 134) 56.2%,
+          rgb(251, 137, 137) 100.2%
+        );
+        max-width: 80%;
+        margin: 0 auto;
+        text-align: center;
+      }
+      button {
+        background: #bc2018;
+        background: rgba(0, 0, 0, 0.87);
+        border: #480c09;
+        font-size: 24px;
+        color: #fff;
+        display: block;
+        padding: 10px 20px;
+        transition: opacity 150ms ease-in-out;
+        cursor: pointer;
+        padding: 16px 24px;
+        border-radius: 30px;
+        margin: 20px auto;
+        font-family: serif;
+        box-shadow: 2px 4px rgba(0 0 0 / 0.3);
+      }
+      button:hover {
+        color: #130504;
+        background: rgb(179, 74, 74);
+        cursor: pointer;
+        border: #190a08;
+        border-radius: 30px;
+        border-width: 2px;
+      }
+      hr {
+        border-top: 2px solid #b1140c;
+      }
+      h3 {
+        font-size: 15px;
+        font-weight: 450;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        text-align: center;
+      }
+      .wikc {
+        color: #e00f04;
+        font-weight: 550;
+        text-decoration: none;
+      }
+      .container {
+        max-width: fit-content;
+        margin: 0 auto;
+        max-height: fit-content;
+      }
+      h4 {
+        text-align: center;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 16px;
+        color: #b1140c;
+      }
+      .wikic {
+        color: #190a08;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        <strong> I love Pizzas </strong>
+      </h1>
+      <h2>
+        <strong>Especially Secilian Pizzas </strong>
+      </h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/059/998/original/1455221797-heart-shaped-tuscan-pizza.jpg?1671726060"
+        width="300"
+      />
+      <hr />
+      <p>
+        <em>Sicilian pizza</em>em is pizza prepared in a manner that originated
+        in Sicily, Italy. Sicilian pizza is also known as
+        <em>sfincione (Italian:)</em>; Sicilian: sfinciuni or focaccia with
+        toppings. This type of pizza became a popular dish in western Sicily by
+        the mid-19th century and was the type of pizza usually consumed in
+        Sicily until the 1860s. It eventually reached North America in a
+        slightly altered form, with thicker crust and a rectangular shape.
+        Traditional <em>Sicilian</em> pizza is often thick crusted and
+        rectangular, but can also be round and similar to the
+        <em>Neapolitan</em> pizza. It is often topped with onions, anchovies,
+        tomatoes, herbs and strong cheese such as <em>caciocavallo</em> and
+        <em>toma</em>. Other versions do not include cheese. The
+        <em> methods</em> of making pizza are linked to local culture and
+        country traditions, so there are differences in preparing pizza among
+        the Sicilian regions of <em>Palermo, Catania, Siracusa</em> and
+        <em>Messina</em>
+      </p>
+      <h3>
+        Find out more on
+        <span class="wiki"
+          ><a
+            href="https://en.wikipedia.org/wiki/Sicilian_pizza"
+            target="blank"
+            class="wikc"
+            >Wikepedia</a
+          ></span
+        >
+      </h3>
+      <button><strong> Buy Sicilian Pizza </strong></button>
+      <h4>
+        Coded by
+        <span
+          ><a
+            class="wikc"
+            href="https://www.instagram.com/m.e.g.h.a_g.h.o.s.h/"
+            target="blank"
+            >Megha Ghosh</a
+          ></span
+        >
+      </h4>
+      <script>
+        function buy() {
+          let name = prompt("Enter your name");
+          let email = prompt("Enter you email");
+          let h1 = document.querySelector("h1");
+          h1.innerHTML = `We will process your order soon, ${name} , at ${email}
+            now please confirm your order in our chatbot 😊`;
+          alert(`We will process your order soon, ${name} , at ${email}
+             now please confirm your order in our chatbot 👇 😊`);
+        }
+        let buyButton = document.querySelector("button");
+        buyButton.addEventListener("click", buy);
+      </script>
+    </div>
+    <h4>Order pizza via our chatbot 👇</h4>
+    <iframe
+      width="350"
+      height="430"
+      allow="microphone;"
+      src="https://console.dialogflow.com/api-client/demo/embedded/98d4452a-5916-4cbb-bed8-9db2499b3536"
+    ></iframe>
+  </body>
+</html>
