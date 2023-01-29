@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+}
+canvas
+{
+    position: absolute;
+    opacity: 0;
+    z-index: 0;
+    transition: 1s;
+}
+
+
+#dice1, #dice2
+{
+    position: absolute;
+    z-index: 10;
+    transform: translateX(-50%);
+    border-radius: 8px;
+    animation: 10ms anim infinite;
+}
+
+
+#dice2
+{
+    top: 3%;
+    border: 3px solid blue;
+}
+
+#status1
+{
+    position: absolute;
+    z-index: 100;
+    color: #000;
+}
+
+#status2
+{
+    position: absolute;
+    z-index: 100;
+    color: #000;
+}
+
+
+.player
+{
+    position: absolute;
+    background: url('https://i.ibb.co/mSH1MK2/piece-Blue-border01.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.ai
+{
+    position: absolute;
+    background: url('https://i.ibb.co/qdmz0CP/piece-Black-border00.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.player,.ai,#status1, #status2, #dice1, #dice2
+{
+    opacity: 0;
+    transition: 1s;
+}
+
+
+
+
+#load1
+{
+    height: 0;
+    width: 0;
+    border-top: 100vh solid #ff8c00;
+    border-right: 100vw solid transparent;
+    position: absolute;
+    top: -100vh;
+    transition: 0.8s;
+}
+
+#load2
+{
+    height: 0;
+    width: 0;
+    border-bottom: 100vh solid #59adf7;
+    border-left: 100vw solid transparent;
+    position: absolute;
+    top: 100vh;
+    transition: 0.8s;
+    
+}
+
+#l1
+{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    z-index: 5000;
+}
+
+#text1
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 20px;
+    opacity: 0;
+    transition: 1s;
+    text-transform: uppercase;
+    
+}
+
