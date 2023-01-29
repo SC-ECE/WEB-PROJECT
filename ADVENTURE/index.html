@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADVENTURE</title>
+    <!-- ==== CSS ==== -->
+    <link rel="stylesheet" href="./style.css"
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar">
+        <h1 class="logo">ADVENTURE</h1>
+        <ul class="nev-links">
+            <li class="active"><a href="#"></a>Home</li>
+            <li><a href="#"></a>Tours</li>
+            <li><a href="#"></a>Explore</li>
+            <li><a href="#"></a>about</li>
+            <li class="ctn"><a href="#"></a>contact</li>
+        </ul>
+            <img src="./4.jpg" alt="" class="menu-btn">         
+    </nav>
+    
+    
+
+
+
+    <header>
+        <div class="header-content">
+            <h2>Explore The Colorful World</h2>
+            <div class="line"></div>
+            <h1>A WONDERFUL GIFT</h1>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </header>
+
+    <!--  ==  Events ==  -->
+    <section class="eventss">
+        <div class="title">
+            <h1>Upcoming Events</h1>
+            <div class="line"></div>
+        </div>
+       <div class="row">
+            <div class="col"> 
+                <img src="2.jpg" alt="">
+                <h4>Everest Base Camp </h4>
+                <p>Mount Everest Base Camp trek is one of the most famous trekking trails in the world along with Annapurna Base Camp trek, Annapurna Circuit, and Ghorepani Poonhill trek.</p>
+                <a href="#"class="ctn">Learn More</a>
+            </div>
+            <div class="col">
+                <img src="3.jpg" alt="">
+                <h4>walking holidays </h4>
+                <p>Walks Worldwide specialise in walking holidays and trekking holidays to all of the world's great trekking destinations. You can join small guided group. </p>
+                <a href="#"class="ctn">Learn More</a>
+            </div>
+        </div> 
+    </section> 
+
+    <section class="explore">
+        <div class="explore-content">
+        <h1>EXPLORE THE WORLD</h1>
+        <div class="line"></div>
+        <P>If a man stays at one place for a long time, he becomes monotonous and his life becomes boring and callous. Travelling removes our monotony and gives pleasure. Similarly, it also broadens our outlook and refreshes our mind. A good traveler can easily educate others.</P>
+        <a href="#" class="ctn">Learn More</a>
+        </div>              
+    </section>  
+
+    <section class="tours">
+        <div class="row">
+            <div class="col content-col">
+                    <h1>UPCOMING TOUR & DESTINATION</h1>
+                    <div class="line"></div>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, maxime? Tempore laborum cum labore impedit nesciunt soluta libero praesentium illum, est non recusandae! Placeat tenetur quibusdam cumque commodi quaerat numquam!</P>
+                    <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery">
+                    <img src="./6.jpg" alt="">
+                    <img src="./7.jpg" alt="">
+                    <img src="./8.jpg" alt="">
+                    <img src="./9.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>   
+    
+    <section class="footer">
+        <p>48/6 Fifth Avenue, India, Austalia,Japan | Phone: 900-320-490 | Email: exploreworld@gmail.com</p>
+        <p>Copyright 2020 Outdoor Adventure</p>
+    </section>
+                                                       
+    <script>
+        const menuBtn =document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nev-links')
+
+         menuBtn.addEventListener('click',()=>{
+               navlinks.classList.toggle('mobile-menu') 
+        })              
+    </script>                  
+                            
+</body>
+</html>
