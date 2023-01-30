@@ -1,0 +1,135 @@
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar-toggler-icon {
+    background-image: url("assets/images/icon-menu.svg");
+}
+
+.btn-close {
+    background: url("assets/images/icon-menu-close.svg");
+}
+
+.offcanvas-body .nav-link:hover,
+.offcanvas-body .nav-link:focus {
+    color: hsl(5, 85%, 63%);
+}
+
+.offcanvas {
+    max-width: 70%;
+}
+
+main .display-1 {
+    font-weight: 800;
+}
+
+main .lead,
+.trending p {
+    color: hsl(236, 13%, 42%);
+}
+
+.read-more {
+    display: inline-block;
+    background-color: hsl(5, 85%, 63%);
+}
+
+.read-more a {
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: hsl(36, 100%, 99%);
+    text-indent: auto;
+    margin-left: 10px;
+    letter-spacing: 10px;
+}
+
+.read-more:hover,
+.read-more:focus {
+    background-color: hsl(240, 100%, 5%);
+}
+
+.new {
+    background-color: hsl(240, 100%, 5%);
+}
+
+.new h2 {
+    color: hsl(35, 77%, 62%);
+    font-weight: 700;
+}
+
+.new h3 {
+    color: hsl(36, 100%, 99%);
+    font-weight: 700;
+}
+
+.new p {
+    color: hsl(233, 8%, 79%);
+}
+
+.article {
+    border-color: hsl(233, 8%, 79%);
+}
+
+.article h3:hover,
+.article h3:focus {
+    color: hsl(35, 77%, 62%);
+}
+
+.trending>img {
+    max-width: 150px;
+    max-height: 200px;
+}
+
+.trending h2 {
+    color: hsl(233, 8%, 79%);
+    font-weight: 800;
+}
+
+.trending h3 {
+    color: black;
+    font-weight: 700;
+}
+
+.trending h3:hover,
+.trending h3:focus {
+    color: hsl(5, 85%, 63%);
+}
+
+.trending{
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 1439px) {
+    section#topArticles {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+@media (min-width:1440px) {
+    section#topArticles {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    section .trending{
+        display: flex;
+        align-items: flex-start;
+    }
+    .trending>img {
+        width: 200px;
+        height: 200px;
+    }
+}

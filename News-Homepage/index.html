@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <!-- bootstrap css cdn -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- bootstrap js cdn -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
+  <!-- Jquery cdn: -->
+  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous"></script>
+
+  <script src="index.js"></script>
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+
+  <title>News homepage</title>
+
+</head>
+
+<body class="mx-4 mx-lg-5">
+  <nav class="navbar navbar-expand-lg sm-fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="assets/images/logo.svg" alt="Site Logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-size-sm offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header p-4 d-flex justify-content-end d-lg-none">
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">New</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Popular</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Trending</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Categories</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="row">
+      <div class="col-lg-8">
+        <section id="mainArticle" class="">
+          <picture>
+            <source srcset="assets/images/image-web-3-mobile.jpg" media="(max-width: 767px)">
+            <img class="img-fluid mb-4" src="assets/images/image-web-3-desktop.jpg" alt="Web 3.0 Article Image">
+          </picture>
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <h1 class="display-1 mb-3">The Bright Future of Web 3.0?</h1>
+            </div>
+            <div class="col-lg-6">
+              <p class="lead">
+                We dive into the next evolution of the web that claims to put the power of the platforms back into the
+                hands
+                of
+                the people. But is it really fulfilling its promise?</p>
+              <div class="px-4 py-3 mt-2 mb-4 read-more"><a href="#web3.0">Read More</a></div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="col-lg-4">
+        <section class="my-5 my-lg-0">
+          <div class="new p-4 pt-lg-5">
+            <h2 class="display-6">New</h2>
+            <div class="article border-bottom my-4 my-lg-5">
+              <h3> <a href="#Cars">Hydrogen VS Electric Cars</a></h3>
+              <p class="mb-4 mb-lg-5">Will hydrogen-fueled cars ever catch up to EVs?</p>
+            </div>
+            <div class="article border-bottom my-4 my-lg-5">
+              <h3> <a href="#AI">The Downsides of AI Artistry</a></h3>
+              <p class="mb-4 mb-lg-5">What are the possible adverse effects of on-demand AI image generation?</p>
+            </div>
+            <div class="article">
+              <h3> <a href="#VCfund">Is VC Funding Drying Up?</a></h3>
+              <p class="mb-lg-5">Private funding by VC firms is down 50% YOY. We take a look at what that means. </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+  <section id="topArticles" class="py-2">
+    <div class="trending my-5">
+      <img class="img-fluid" src="assets/images/image-retro-pcs.jpg" alt="Retro PC">
+      <div class="ps-4 d-flex flex-column justify-content-around">
+        <h2 class="display-3">01</h2>
+        <h3 class="display-6"> <a href="#retropc">Reviving Retro PCs</a></h3>
+        <p>What happens when old PCs are given modern upgrades?</p>
+      </div>
+    </div>
+    <div class="trending my-5">
+      <img class="img-fluid" src="assets/images/image-top-laptops.jpg" alt="Top Laptops">
+      <div class="ps-4 d-flex flex-column justify-content-around">
+        <h2 class="display-3">02</h2>
+        <h3 class="display-6"> <a href="#toplaptop">Top 10 Laptops of 2022</a></h3>
+        <p>Our best picks for various needs and budgets.</p>
+      </div>
+    </div>
+    <div class="trending my-5">
+      <img class="img-fluid" src="assets/images/image-gaming-growth.jpg" alt="Gaming Growth">
+      <div class="ps-4 d-flex flex-column justify-content-around">
+        <h2 class="display-3">03</h2>
+        <h3 class="display-6"> <a href="#gaming">The Growth of Gaming</a></h3>
+        <p>How the pandemic has sparked fresh opportunities.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <div class="attribution text-center">
+    Design by <a class="text-center" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend
+      Mentor</a>.
+    Coded by <a href="#">EmberTSeal</a>.
+  </div>
+</body>
+
+</html>
