@@ -1,7 +1,7 @@
-# Responsive Website Restaurant
-## [Watch it on youtube](https://youtu.be/5RIFrZEjURA)
-### Responsive Website Restaurant
-Nice design of a responsive restaurant website 🥗 . It contains a header, home, about, services, menu, app, contact and a footer. It also has a fully developed light/dark mode 🌓 first for mobile then for desktop.
-
-Don't forget to join the channel for more videos like this.
-[Bedimcode](https://www.youtube.com/c/Bedimcode)
+# Responsive Website for Restaurant
+## Synapse ticket
+![Niladri](https://user-images.githubusercontent.com/93518661/215489297-51cfca8b-4cd2-4a03-8cbe-581db1e33fc9.png)
+## Author
+[Niladri](https://github.com/Niladri2003)
+## Website
+[Preview](https://resturant-af7o.vercel.app/)
