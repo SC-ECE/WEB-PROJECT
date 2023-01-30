@@ -5,7 +5,8 @@ A responsive news homepage.
 ## Table of contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
+  - [Ticket](#ticket)
+  - [Feature](#feature)
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
@@ -15,7 +16,10 @@ A responsive news homepage.
 
 ## Overview
 
-### The challenge
+### Ticket
+<img src="final/ticket.png">
+
+### Feature
 
 Users should be able to:
 
