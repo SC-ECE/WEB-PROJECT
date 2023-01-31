@@ -1,4 +1,4 @@
-## Furniture Website
+## Travelling agency Website
 
 It is an online travelling agency website,built using html,css and javascript
 ## Authors
