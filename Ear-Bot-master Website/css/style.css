@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* **************************************** Comman Page Styling Start **************************************** */
+
+/* Navbar Styling Start */
+.comman_nav {
+  background-color: black;
+}
+.comman_nav .active .nav-link {
+  color: white !important;
+}
+.comman_nav .nav-link {
+  color: rgb(170, 169, 169) !important;
+}
+.comman_nav .nav-link:hover {
+  color: white !important;
+}
+
+/* Carousel Styling Start */
+.carousel .carousel-item img {
+  width: 100%;
+  height: 100vh;
+}
+/* **************************************** Comman Page Styling End **************************************** */
+
+/* **************************************** Starting Page Styling Start **************************************** */
+.start__page {
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+}
+.start__page img {
+  -webkit-transition: -webkit-transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out;
+  width: 200px;
+  height: 200px;
+}
+.start__page img:hover {
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+}
+/* **************************************** Starting Page Styling End **************************************** */
+
+/* **************************************** Home Page Styling Start **************************************** */
+.home__page {
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+}
+.home__page .carousel .carousel-item img {
+  display: block;
+  width: 100%;
+}
+
+/* About Page Styling Start  */
+.home__page .about_page {
+  background: url(../Images/home-SecondPage_img.jpg) center center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  padding-top: 150px;
+}
+
+/* Images Page Styling Start  */
+.home__page .images_page {
+  background-color: black !important;
+}
+.home__page .images_page .row div {
+  width: 100px !important;
+  height: 350px;
+  overflow: hidden;
+}
+.home__page .images_page .row img {
+  width: 450px;
+  height: 350px;
+  transition: all 0.3s;
+}
+.home__page .images_page .row img:hover {
+  transform: scale(1.1);
+}
+.home__page .images_page .social_media-icon i {
+  color: rgb(38, 128, 189) !important;
+  margin-bottom: 4rem;
+}
+.home__page .images_page .social_media-icon i:hover {
+  color: rgb(12, 78, 122) !important;
+}
+/* **************************************** Home Page Styling End **************************************** */
+
+/* **************************************** Connect Page Styling Start **************************************** */
+
+.connect__page {
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Details Page Start */
+.connect__page .details__page img {
+  width: 300px;
+}
+
+/* Gallery Page Start */
+.connect__page .gallery__page .row img {
+  width: 450px;
+  height: 350px;
+  transition: all 0.3s;
+}
+.connect__page .gallery__page .social_media-icon i {
+  color: rgb(38, 128, 189) !important;
+}
+.connect__page .gallery__page .social_media-icon i:hover {
+  color: rgb(12, 78, 122) !important;
+}
+
+/* **************************************** Connect Page Styling End **************************************** */
+
+/* **************************************** Support Page Styling Start **************************************** */
+
+/* Navbar Styling Start */
+.support__page .navbar .form-inline input {
+  border-radius: 5px 0 0 5px;
+  padding: 0.3rem 1rem;
+}
+.support__page .navbar .form-inline i {
+  background-color: gray;
+  border: 1px solid gray;
+  margin-left: -5px;
+  color: white;
+}
+/* **************************************** Support Page Styling End **************************************** */
