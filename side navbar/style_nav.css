@@ -1,0 +1,107 @@
+html {
+  background: #e8e8f3;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.menu {
+  position: relative;
+  top: 40px;
+  padding: 30px;
+  background: #e8e8f3;
+  border-radius: 100%;
+  cursor: pointer;
+  -webkit-box-shadow: 7px 7px 15px rgba(55, 84, 170, 0.15), -7px -7px 20px white, inset 0px 0px 4px rgba(255, 255, 255, 0.2), inset 7px 7px 15px rgba(55, 84, 170, 0), inset -7px -7px 20px rgba(255, 255, 255, 0), 0px 0px 4px rgba(255, 255, 255, 0);
+          box-shadow: 7px 7px 15px rgba(55, 84, 170, 0.15), -7px -7px 20px white, inset 0px 0px 4px rgba(255, 255, 255, 0.2), inset 7px 7px 15px rgba(55, 84, 170, 0), inset -7px -7px 20px rgba(255, 255, 255, 0), 0px 0px 4px rgba(255, 255, 255, 0);
+}
+
+.menu::before, .menu::after {
+  content: "";
+  background: #c3c2c7;
+  border-radius: 5px;
+  width: 30px;
+  height: 5px;
+  position: absolute;
+  left: 16px;
+  top: 27px;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  z-index: 1;
+}
+
+.menu::before {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.menu::after {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.menu.open {
+  opacity: .9;
+}
+
+.menu.open::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.menu.open::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.menu.open .button {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.menu.open .button:first-of-type {
+  bottom: 40px;
+  right: 70px;
+  background: url("https://bassets.github.io/cam.svg") no-repeat 50%/50% #e8e8f3;
+}
+
+.menu.open .button:nth-of-type(2) {
+  bottom: 80px;
+  background: url("https://bassets.github.io/img.svg") no-repeat 50%/50% #e8e8f3;
+  -webkit-transition-delay: .05s;
+          transition-delay: .05s;
+}
+
+.menu.open .button:last-of-type {
+  bottom: 40px;
+  right: -70px;
+  background: url("https://bassets.github.io/music.svg") no-repeat 50% 45%/50% 45% #e8e8f3;
+  -webkit-transition-delay: .1s;
+          transition-delay: .1s;
+}
+
+.button {
+  padding: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #e8e8f3;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-box-shadow: inherit;
+          box-shadow: inherit;
+  -webkit-transition: 0.2s cubic-bezier(0.18, 0.89, 0.32, 1.28), 0.2s ease opacity, 0.2s cubic-bezier(0.08, 0.82, 0.17, 1) -webkit-transform;
+  transition: 0.2s cubic-bezier(0.18, 0.89, 0.32, 1.28), 0.2s ease opacity, 0.2s cubic-bezier(0.08, 0.82, 0.17, 1) -webkit-transform;
+  transition: 0.2s cubic-bezier(0.18, 0.89, 0.32, 1.28), 0.2s ease opacity, 0.2s cubic-bezier(0.08, 0.82, 0.17, 1) transform;
+  transition: 0.2s cubic-bezier(0.18, 0.89, 0.32, 1.28), 0.2s ease opacity, 0.2s cubic-bezier(0.08, 0.82, 0.17, 1) transform, 0.2s cubic-bezier(0.08, 0.82, 0.17, 1) -webkit-transform;
+}
+
+.button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+/*# sourceMappingURL=style_nav.css.map */
