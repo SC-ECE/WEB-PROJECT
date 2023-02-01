@@ -1,0 +1,64 @@
+.nav-link {
+    color: rgb(9, 8, 8) !important;
+}
+
+@media only screen and (min-width: 100px) {
+
+    h1,
+    h4 {
+        display: block !important;
+    }
+}
+
+#card-text {
+    font-size: 14px;
+}
+
+.btn:focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+
+.rounded {
+    border-radius: .30rem;
+}
+
+
+
+.text-small {
+    font-size: 0.9rem;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+
+
+.form-control {
+    background: #212529;
+    border-color: #545454;
+}
+
+/* .form-control:focus {
+    background: #212529;
+} */
+
+footer {
+    background: #58595a;
+}
+
+footer {
+    color: white;
+}
+
+/* ==========================================
+      CUSTOM UTILS CLASSES
+    ========================================== */
+body,
+html {
+    height: 100%;
+}
