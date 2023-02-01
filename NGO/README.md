@@ -1,10 +1,9 @@
-# thejoymakers
-This is my first website which is hosted in github.
-i make this website with html css and specially bootstrap .
-the link to website is here=> https://niladri2003.github.io/thejoymakers/
+# NGO thejoymakers
+# Synapse Ticket
+![Arnab](https://user-images.githubusercontent.com/109953155/216124113-5d71f9ce-6c63-4e19-af3d-d5f2429fa5ae.png)
 
------Content of website-----
-This is a simple NGO website.
+
+
 
 
 
