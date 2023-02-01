@@ -1,0 +1,1 @@
+![SYNAPSE_BADGE_OPEN_SOURCE_CONTRIBUTION](https://user-images.githubusercontent.com/84579218/216124679-6d8431e1-4191-489c-a6b4-a4b2510f0bd5.png)
